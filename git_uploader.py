@@ -48,7 +48,7 @@ class GitCommitHandler:
         try:
             for command in self.commands:
                 logger.info("Executing command: %s", command)
-                result = subprocess.run(command, shell=True)
+                result = subprocess.run(command, shell=True, check=True)
 
                 if result.returncode != 0:
                     logger.info("Command failed: %s", command)
