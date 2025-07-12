@@ -27,5 +27,4 @@ def create_bucket(bucket_name: str) -> {}:
 
 if __name__ == "__main__":
     bucket_name = "<insert bucket name>"
-    print(bucket_name)
     create_bucket(bucket_name=bucket_name)
